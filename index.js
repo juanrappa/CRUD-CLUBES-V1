@@ -21,6 +21,13 @@ app.get("/", (req, res) => {
     data : createClubs(classClub,clubes)
   });
 });
-
+app.get('/:id/look',(req,res)=>{
+  res.render("club",{
+    layout:"layout",
+    club: createClub(Number(req.params.id),classClub,clubes,createClubs)
+  })
+})
+const a = createClub(57,classClub,clubes,createClubs)
+console.log(a)
 app.listen(PUERTO);
 console.log(`Escuchando en http://localhost:${PUERTO}`);

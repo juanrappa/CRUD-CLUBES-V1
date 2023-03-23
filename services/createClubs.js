@@ -21,9 +21,10 @@ const createClubs = (classCLub, listOfClubs) => {
   );
 };
 
-const createClub = (id, classCLub, listOfClubs) => {
-  const club = listOfClubs.filter((club) => club.id === id)[0];
-  return new classCLub(club);
+const createClub = (id, classCLub, listOfClubs,createClubs) => {
+  const clubs = createClubs(classCLub,listOfClubs)
+  const club = clubs.filter((club)=> club.id === id)[0]
+  return club;
 };
 
 module.exports = { createClub, createClubs };
