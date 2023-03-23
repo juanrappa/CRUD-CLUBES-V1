@@ -1,0 +1,33 @@
+<div>
+    {{#if club.id}}
+        <input type="text" name="id" id="name" value="{{club.id}}" hidden>
+    {{/if}}
+    
+    <label for="name">name</label>
+    <input type="text" id="name" name="name" required>
+    <label for="shortName" >shortName</label>
+    <input type="text" id="shortName">
+    <label for="tla">tla</label>
+    <input type="text" name="tla" id="tla">
+    <label for="address">address</label>
+    <input type="text" name="address" id="address">
+    <label for="website">website</label>
+    <input type="text" name="website" id="website">
+    <label for="email">email</label>
+    <input type="text" name="" id="">
+</div>
+
+
+
+
+h3>{{club.name}}</h3>
+        <h3>{{club.shortName}}</h3>
+        <h3>{{club.tla}}</h3>
+        <h3>{{club.address}}</h3>
+        <h3>{{club.phone}}</h3>
+        <h3>{{club.website}}</h3>
+        <h3>{{club.email}}</h3>
+        <h3>{{club.founded}}</h3>
+        <h3>{{club.clubColors}}</h3>
+        <h3>{{club.venue}}</h3>
+        <h3>{{club.lastUpdate}}</h3>
